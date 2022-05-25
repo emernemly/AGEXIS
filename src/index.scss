@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Oswald:wght@500&display=swap');
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h4 {
+  margin-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+}
+button {
+  border: none;
+  outline: none;
+}
+.primary-btn {
+  background-color: #1c2c4e;
+  color: white;
+  font-size: 20px;
+  padding: 10px 19px;
+  border-radius: 10px;
+}
