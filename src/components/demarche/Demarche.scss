@@ -1,0 +1,215 @@
+.demarche {
+  background-color: rgb(221 224 229 / 20%);
+  min-height: 800px;
+  padding: 91px 0;
+  overflow: hidden;
+  .all-demarche {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .left-demarche {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      margin-bottom: 60px;
+      color: #bc2331;
+      h3 {
+        font-size: 45px;
+        svg {
+          width: 30px;
+          transform: translateY(-35%);
+        }
+      }
+    }
+    .demarche-contant {
+      max-width: 500px;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid rgb(154, 153, 153);
+      p {
+        margin: 22px 0;
+        color: #4a4848;
+      }
+      ul {
+        li {
+          margin: 30px 0;
+          font-size: 20px;
+          transform: translateX(-13px);
+        }
+        padding-left: 0;
+      }
+    }
+  }
+
+  .demarche-image {
+    max-width: 450px;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+    .date {
+      background-color: rgb(76, 75, 75);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 115px;
+      height: 30px;
+      top: -13px;
+      position: absolute;
+    }
+    .demarche-description {
+      opacity: 0.723;
+      width: 410px;
+      height: 250px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      margin-left: 26px;
+      position: absolute;
+      // transform: translateY(-106%);
+      bottom: 24px;
+
+      p {
+        color: #4a4848;
+        margin: 15px;
+      }
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+// @media screen and (max-width: 914px) {
+//   .demarche {
+//     display: flex;
+//     background-color: rgba(221, 224, 229, 0.2);
+//     padding: 91px 0;
+//     height: max-content;
+//     .all-demarche {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       justify-content: center;
+//       align-items: center;
+//       width: 100%;
+//       .left-demarche {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         padding: 14% 74px;
+//         align-items: center;
+//         padding: 14% 21px;
+//         .demarche-contant {
+//           padding-left: 30px;
+//           display: flex;
+//           flex-direction: column;
+//           border-left: 1px solid rgb(154, 153, 153);
+//           max-width: none;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 638px) {
+//   .demarche {
+//     .all-demarche {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       /* justify-content: center; */
+//       align-items: center;
+//     }
+//     .demarche-image {
+//       width: auto;
+//     }
+//   }
+// }
+// @media screen and (max-width: 447px) {
+//   .demarche {
+//     .all-demarche {
+//       img {
+//         width: 100%;
+//       }
+//       .demarche-description {
+//         width: 90%;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 379px) {
+//   .demarche {
+//     .demarche-image {
+//       .date {
+//         transform: translateY(-19px);
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 281px) {
+//   .demarche {
+//     .all-demarche {
+//       .demarche-description {
+//         p {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 425px) {
+  .demarche {
+    .all-demarche {
+      display: flex;
+      flex-direction: column-reverse;
+      height: max-content;
+      margin: 10px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .demarche-image {
+        img {
+          margin: 10px;
+        }
+        .demarche-description {
+          width: 85%;
+        }
+      }
+    }
+    .left-demarche {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 22px;
+      .demarche-contant {
+        ul {
+          li {
+            transform: translateX(-19px);
+          }
+        }
+      }
+      .title {
+        h3 {
+          text-align: center;
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .demarche-description {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
